@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>EARTH — Every ecosystem has a story</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css"><script>try{if(sessionStorage.wipe)document.documentElement.classList.add("wiped")}catch(e){}</script>
+</head>
+<body class="lock">
+<div id="wl"><div class="pl"><b></b><i></i></div>
+ <span class="mono">Welcome to</span><h1>EARTH</h1>
+ <p id="tg">Earth is alive.</p>
+ <div class="pb"><u id="pf"></u></div>
+ <button class="cta" id="en" disabled>Loading 0%</button>
+ <small class="mono">Best with sound off · Drag the globe · Scroll to explore</small></div>
+<div id="aur"><i></i><i></i><i></i></div><canvas id="bg"></canvas><div id="mg"></div><div id="sp"></div><div id="wp"><span class="mono"></span></div><div id="cu"></div><div id="cr"></div>
+<nav><b>EARTH</b><div><a href="#explore">Explore</a><a href="#oceans">Oceans</a><a href="#wildlife">Wildlife</a><a href="#climate">Climate</a><a href="#pulse">Live</a><a href="#action">Act</a><button id="th">◐ Mode</button></div></nav>
+
+<section class="hero" id="home">
+ <div class="t"><span class="mono">● Welcome to Earth</span>
+  <h1>Earth is <i>alive.</i> Every ecosystem has a story.</h1>
+  <p>One blue planet, 8 billion neighbours and millions of species. Explore its continents, listen to its oceans and see how we can protect it.</p>
+  <a href="#explore"><button class="cta">Begin the journey ↓</button></a></div>
+ <canvas id="g"></canvas>
+ <div class="fl" style="top:24%;right:46%"><span class="mono">Temp</span><b id="l1">--</b></div>
+ <div class="fl" style="top:18%;right:8%;animation-delay:-2s"><span class="mono">Air quality</span><b id="l2">--</b></div>
+ <div class="fl" style="bottom:20%;right:44%;animation-delay:-4s"><span class="mono">Sea temp</span><b id="l3">--</b></div>
+ <div class="fl" style="bottom:26%;right:5%;animation-delay:-1s"><span class="mono">CO₂</span><b>~423 ppm</b></div>
+</section>
+
+<section id="explore"><span class="mono">01 — Explore</span><h2 class="rv">Seven continents,<br>one living map.</h2>
+ <p class="lead rv">Click a continent below, or click the globe itself. Drag to spin it.</p>
+ <div class="chips" id="chips"></div>
+ <div id="info" class="rv"></div>
+</section>
+
+<section id="oceans"><span class="mono">02 — Our Oceans</span><h2 class="rv">The blue heart<br>of the planet.</h2>
+ <p class="lead rv">Oceans cover 71% of Earth, produce about half of our oxygen and absorb a large share of the heat and carbon we emit.</p>
+ <div class="grid">
+  <a class="card rv pg" data-t="Marine Life" href="marine-life.html" style="display:block;color:inherit;text-decoration:none"><img src="https://images.unsplash.com/photo-1437622368342-7a3d73a34c8f?w=800&q=70" alt="Sea turtle"><div><h3>Marine Life</h3><p>Over 230,000 marine species are known, and scientists think many more remain undiscovered.</p><span class="mono" style="display:block;margin-top:14px">Explore →</span></div></a>
+  <a class="card rv pg" data-t="Ocean Pollution" href="ocean-pollution.html" style="display:block;color:inherit;text-decoration:none"><img src="https://images.unsplash.com/photo-1518837695005-2083093ee35b?w=800&q=70" alt="Ocean wave"><div><h3>Ocean Pollution</h3><p>Around 11 million tonnes of plastic enter the ocean every year, harming wildlife and entering the food chain.</p><span class="mono" style="display:block;margin-top:14px">Explore →</span></div></a>
+  <a class="card rv pg" data-t="Underwater Ecosystems" href="underwater-ecosystems.html" style="display:block;color:inherit;text-decoration:none"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=70" alt="Tropical coast"><div><h3>Underwater Ecosystems</h3><p>Reefs cover under 1% of the seabed yet support about a quarter of marine species. Warming seas bleach them.</p><span class="mono" style="display:block;margin-top:14px">Explore →</span></div></a>
+ </div>
+ <div class="split" style="margin-top:70px">
+  <div><span class="mono">Before / After</span><h2 style="font-size:clamp(34px,4vw,56px)">A forest, then and now.</h2><p class="lead">Drag the slider. An illustration of how healthy habitats fade under pollution, heat and loss of vegetation.</p></div>
+  <div class="ba"><img id="af" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1000&q=70" alt="Degraded forest"><img id="bf" style="z-index:1" src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1000&q=70" alt="Healthy forest"><span class="tag" style="left:14px;z-index:2">HEALTHY</span><span class="tag" style="right:14px">DEGRADED</span><div id="hd"></div><input type="range" id="rg" min="0" max="100" value="50" aria-label="Compare"></div>
+ </div>
+</section>
+
+<section id="wildlife"><span class="mono">03 — Wildlife</span><h2 class="rv">Biodiversity<br>on the edge.</h2>
+ <p class="lead rv">More than 47,000 species are on the IUCN Red List as threatened. Each one holds a thread of the web of life.</p>
+ <div class="grid"><a class="card rv pg" data-t="Rainforests" href="rainforest-wildlife.html" style="display:block;color:inherit;text-decoration:none"><img src="https://images.unsplash.com/photo-1511497584788-876760111969?w=1000&q=70" alt="Rainforests" data-k="rainforest,jungle" loading="lazy"><div><h3>Rainforests</h3><p>Emerald canopies and the species that depend on them.</p><span class="mono" style="display:block;margin-top:14px">Explore →</span></div></a><a class="card rv pg" data-t="Savannas" href="savanna-wildlife.html" style="display:block;color:inherit;text-decoration:none"><img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?w=1000&q=70" alt="Savannas" data-k="lion,savanna" loading="lazy"><div><h3>Savannas</h3><p>Great migrations, big cats and open skies.</p><span class="mono" style="display:block;margin-top:14px">Explore →</span></div></a><a class="card rv pg" data-t="Arctic & Alpine" href="arctic-alpine-wildlife.html" style="display:block;color:inherit;text-decoration:none"><img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=1000&q=70" alt="Arctic & Alpine" data-k="polar,bear" loading="lazy"><div><h3>Arctic & Alpine</h3><p>Specialists living at the cold edge of the planet.</p><span class="mono" style="display:block;margin-top:14px">Explore →</span></div></a><a class="card rv pg" data-t="Extinction Crisis" href="extinction-crisis.html" style="display:block;color:inherit;text-decoration:none"><img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=1000&q=70" alt="Extinction Crisis" data-k="panda" loading="lazy"><div><h3>Extinction Crisis</h3><p>The Red List, the drivers, and the comebacks.</p><span class="mono" style="display:block;margin-top:14px">Explore →</span></div></a><div class="card stat rv"><div class="mono">Species at risk</div><div class="n" data-n="1000000" data-s="+">0</div><p>species could face extinction in the coming decades, according to the IPBES assessment.</p></div>
+ </div>
+</section>
+
+<section id="climate"><span class="mono">04 — Climate</span><h2 class="rv">A warming world,<br>in numbers.</h2>
+ <p class="lead rv">Greenhouse gases trap heat. The result: hotter years, rising seas and more extreme weather.</p>
+ <div class="grid">
+  <div class="card stat rv"><div class="mono">Warming vs 1850–1900</div><div class="n" data-n="1.3" data-d="1" data-s="°C">0</div><p>Recent years sit at or above this level.</p></div>
+  <div class="card stat rv"><div class="mono">Atmospheric CO₂</div><div class="n" data-n="423" data-s=" ppm">0</div><p>Up from about 280 ppm before the industrial era.</p></div>
+  <div class="card stat rv"><div class="mono">Sea level rise since 1900</div><div class="n" data-n="21" data-s=" cm">0</div><p>And the rate is accelerating.</p></div>
+  <div class="card stat rv"><div class="mono">Forest cover</div><div class="n" data-n="31" data-s="%">0</div><p>of Earth's land is forest, about 4.1 billion hectares.</p></div>
+ </div>
+<!--cl--><p class="mono" style="margin-top:60px">Go deeper</p><div class="grid"><a class="card stat rv pg" data-t="Global Temperature" href="global-temperature.html" style="display:block;color:inherit;text-decoration:none"><div class="mono">01</div><h3 style="font-size:28px">Global Temperature</h3><p>How fast Earth is warming and why.</p><span class="mono" style="display:block;margin-top:12px">Explore →</span></a><a class="card stat rv pg" data-t="Extreme Weather" href="extreme-weather.html" style="display:block;color:inherit;text-decoration:none"><div class="mono">02</div><h3 style="font-size:28px">Extreme Weather</h3><p>Heat, floods, fires and storms.</p><span class="mono" style="display:block;margin-top:12px">Explore →</span></a><a class="card stat rv pg" data-t="Sea Level & Ice" href="sea-level-ice.html" style="display:block;color:inherit;text-decoration:none"><div class="mono">03</div><h3 style="font-size:28px">Sea Level & Ice</h3><p>Melting ice and rising seas.</p><span class="mono" style="display:block;margin-top:12px">Explore →</span></a><a class="card stat rv pg" data-t="Net Zero Pathways" href="net-zero.html" style="display:block;color:inherit;text-decoration:none"><div class="mono">04</div><h3 style="font-size:28px">Net Zero Pathways</h3><p>The solutions that already work.</p><span class="mono" style="display:block;margin-top:12px">Explore →</span></a></div><!--/cl--></section>
+
+<section id="pulse"><span class="mono">05 — Planet Pulse · Live</span><h2 class="rv">The state of our planet,<br>right now.</h2>
+ <p class="lead">Live data from Open-Meteo. Choose a place:</p>
+ <select id="city"></select>
+ <div class="live">
+  <div class="card stat"><div class="mono">Temperature</div><div class="n" id="p1">--</div><p id="p1s">&nbsp;</p></div>
+  <div class="card stat"><div class="mono">Air quality (US AQI)</div><div class="n" id="p2">--</div><p id="p2s">&nbsp;</p></div>
+  <div class="card stat"><div class="mono">Ocean surface temp</div><div class="n" id="p3">--</div><p id="p3s">Nearest sea point</p></div>
+  <div class="card stat"><div class="mono">Wave height</div><div class="n" id="p4">--</div><p>Nearest sea point</p></div>
+ </div>
+ <p class="mono" style="margin-top:50px">Environmental news &amp; sources</p>
+ <div class="grid">
+  <a class="card stat" style="color:inherit;text-decoration:none" href="https://climate.nasa.gov" target="_blank"><div class="mono">NASA</div><h3>Climate vital signs</h3><p>Live CO₂, temperature and ice data →</p></a>
+  <a class="card stat" style="color:inherit;text-decoration:none" href="https://www.unep.org/news-and-stories" target="_blank"><div class="mono">UN Environment</div><h3>Latest stories</h3><p>News on nature, climate and pollution →</p></a>
+  <a class="card stat" style="color:inherit;text-decoration:none" href="https://www.noaa.gov/news" target="_blank"><div class="mono">NOAA</div><h3>Ocean &amp; weather news</h3><p>Research and updates on oceans →</p></a>
+  <a class="card stat" style="color:inherit;text-decoration:none" href="https://www.globalforestwatch.org" target="_blank"><div class="mono">Global Forest Watch</div><h3>Forest tracking</h3><p>Near real-time forest change →</p></a>
+ </div>
+</section>
+
+<section id="action"><span class="mono">06 — Take Action</span><h2 class="rv">Small actions,<br>planetary effect.</h2>
+ <p class="lead">Tap each action you commit to. <b id="cnt" style="color:var(--ac)">0</b> / 8 pledged.</p>
+ <div class="grid" id="acts"></div>
+<!--ac--><p class="mono" style="margin-top:60px">Go deeper</p><div class="grid"><a class="card stat rv pg" data-t="At Home" href="action-home.html" style="display:block;color:inherit;text-decoration:none"><div class="mono">01</div><h3 style="font-size:28px">At Home</h3><p>Energy, water and waste.</p><span class="mono" style="display:block;margin-top:12px">Explore →</span></a><a class="card stat rv pg" data-t="Food & Shopping" href="action-food.html" style="display:block;color:inherit;text-decoration:none"><div class="mono">02</div><h3 style="font-size:28px">Food & Shopping</h3><p>What you eat and buy.</p><span class="mono" style="display:block;margin-top:12px">Explore →</span></a><a class="card stat rv pg" data-t="Move & Speak Up" href="action-community.html" style="display:block;color:inherit;text-decoration:none"><div class="mono">03</div><h3 style="font-size:28px">Move & Speak Up</h3><p>Travel lighter, act together.</p><span class="mono" style="display:block;margin-top:12px">Explore →</span></a></div><!--/ac--></section>
+<footer>EARTH · Made with care for the only home we have. Photos: Unsplash · Data: Open-Meteo, NASA, NOAA, IUCN, IPBES.</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="site.js"></script>
+<script>// continents
+const CT=[['Africa',2,20,'30.4 M km²','1.5 billion','54','Home to the Sahara and the Congo rainforest, with the greatest large-mammal diversity on Earth.'],
+['Asia',34,90,'44.6 M km²','4.7 billion','48','Largest continent, from Siberia to the Himalaya, including Mount Everest at 8,849 m.'],
+['Europe',54,15,'10.2 M km²','745 million','44','A compact continent with a long coastline and some of the most densely used land.'],
+['North America',45,-100,'24.7 M km²','600 million','23','Spans Arctic tundra to tropical forests and holds the Great Lakes.'],
+['South America',-15,-60,'17.8 M km²','440 million','12','The Amazon alone hosts roughly 10% of all known species.'],
+['Oceania',-25,135,'8.5 M km²','45 million','14','Includes Australia and thousands of Pacific islands, with the Great Barrier Reef.'],
+['Antarctica',-80,0,'14.2 M km²','~1,000 researchers','0','The coldest, windiest continent, holding about 70% of the planet’s fresh water as ice.']];
+const ch=$('#chips');CT.forEach((c,i)=>{const a=document.createElement('a');a.href=c[0].toLowerCase().replace(/ /g,'-')+'.html';a.className='pg';a.dataset.t=c[0];const b=document.createElement('button');b.textContent=c[0];a.append(b);a.onmouseenter=()=>show(i,true);ch.append(a)});
+function show(i,f){const c=CT[i];[...ch.children].forEach((a,j)=>a.firstChild.classList.toggle('on',i==j));
+ $('#info').innerHTML=`<div><span class="mono">Continent</span><h3>${c[0]}</h3><p style="color:var(--mut);margin-top:10px">${c[6]}</p><a class="pg" data-t="${c[0]}" href="${c[0].toLowerCase().replace(/ /g,'-')}.html"><button class="cta" style="margin-top:22px">Explore ${c[0]} →</button></a></div><dl><dt>Area</dt><dd>${c[3]}</dd><dt>Population</dt><dd>${c[4]}</dd><dt>Countries</dt><dd>${c[5]}</dd><dt>Coords</dt><dd>${c[1]}°, ${c[2]}°</dd></dl>`;
+ $('#info').animate([{opacity:0,transform:'translateY(18px)',filter:'blur(8px)'},{opacity:1,transform:'none',filter:'blur(0)'}],{duration:550,easing:'cubic-bezier(.2,.7,.2,1)'});
+ if(f)focus(c[1],c[2])}
+show(0);
+// globe
+const cv=$('#g'),R=new THREE.WebGLRenderer({canvas:cv,alpha:true,antialias:true});R.setPixelRatio(Math.min(devicePixelRatio,2));
+const S=new THREE.Scene(),C=new THREE.PerspectiveCamera(36,1,.1,100);C.position.z=7;
+const U='https://unpkg.com/three-globe@2.31.0/example/img/',LM=new THREE.LoadingManager(),L=new THREE.TextureLoader(LM),G=new THREE.Group();S.add(G);
+const E=new THREE.Mesh(new THREE.SphereGeometry(1.6,128,128),new THREE.MeshPhongMaterial({map:L.load(U+'earth-blue-marble.jpg'),bumpMap:L.load(U+'earth-topology.png'),bumpScale:.025,shininess:6,specular:0x223344}));G.add(E);
+S.add(new THREE.Mesh(new THREE.SphereGeometry(1.72,96,96),new THREE.ShaderMaterial({transparent:true,side:THREE.BackSide,blending:THREE.AdditiveBlending,
+ vertexShader:'varying vec3 n;void main(){n=normalize(normalMatrix*normal);gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.);}',
+ fragmentShader:'varying vec3 n;void main(){float i=pow(max(0.,.56-dot(n,vec3(0,0,1.))),4.)*1.5;gl_FragColor=vec4(.35,.78,1.,1.)*i;}'})));
+const rg=new THREE.Mesh(new THREE.RingGeometry(2.28,2.285,180),new THREE.MeshBasicMaterial({color:0x5ee1ff,transparent:true,opacity:.35,side:THREE.DoubleSide}));rg.rotation.x=1.25;rg.rotation.y=.3;S.add(rg);
+S.add(new THREE.AmbientLight(0xffffff,.75));const dl=new THREE.DirectionalLight(0xffffff,1.1);dl.position.set(5,2,5);S.add(dl);
+function rs(){const w=cv.clientWidth,h=cv.clientHeight;R.setSize(w,h,false);C.aspect=w/h;C.updateProjectionMatrix()}addEventListener('resize',rs);rs();
+let drag=0,tgt=null,lx,ly,mv=0;
+cv.onpointerdown=e=>{drag=1;mv=0;lx=e.clientX;ly=e.clientY;tgt=null;cv.setPointerCapture(e.pointerId)};
+cv.onpointermove=e=>{if(!drag)return;mv+=Math.abs(e.clientX-lx)+Math.abs(e.clientY-ly);G.rotation.y+=(e.clientX-lx)*.006;G.rotation.x=Math.max(-1.2,Math.min(1.2,G.rotation.x+(e.clientY-ly)*.004));lx=e.clientX;ly=e.clientY};
+cv.onpointerup=e=>{drag=0;if(mv<6)pick(e)};
+const rc=new THREE.Raycaster();
+function pick(e){const r=cv.getBoundingClientRect();rc.setFromCamera(new THREE.Vector2((e.clientX-r.left)/r.width*2-1,-(e.clientY-r.top)/r.height*2+1),C);
+ const h=rc.intersectObject(E)[0];if(!h)return;const p=E.worldToLocal(h.point.clone());const lat=Math.asin(p.y/1.6)*180/Math.PI,lon=Math.atan2(-p.z,p.x)*180/Math.PI;
+ let b=0,bd=1e9;CT.forEach((c,i)=>{const a=c[1]*Math.PI/180,o=lat*Math.PI/180,d=Math.acos(Math.min(1,Math.sin(a)*Math.sin(o)+Math.cos(a)*Math.cos(o)*Math.cos((c[2]-lon)*Math.PI/180)))*180/Math.PI;if(d<bd){bd=d;b=i}});
+ if(bd<48){show(b);focus(CT[b][1],CT[b][2])}}
+function focus(lat,lon){tgt={x:lat*Math.PI/180,y:-Math.PI/2-lon*Math.PI/180}}
+(function loop(){requestAnimationFrame(loop);
+ if(tgt){const dy=Math.atan2(Math.sin(tgt.y-G.rotation.y),Math.cos(tgt.y-G.rotation.y));G.rotation.y+=dy*.06;G.rotation.x+=(tgt.x-G.rotation.x)*.06}
+ else if(!drag)G.rotation.y+=.0018;C.position.x+=((mx/innerWidth-.5)*.7-C.position.x)*.05;C.position.y+=((.5-my/innerHeight)*.5-C.position.y)*.05;C.lookAt(0,0,0);R.render(S,C)})();
+// welcome screen
+const tl=['Earth is alive.','Every ecosystem has a story.','Let’s explore our home.'];let ti=0;
+setInterval(()=>{const p=$('#tg');p.style.opacity=0;setTimeout(()=>{p.textContent=tl[++ti%3];p.style.opacity=1},600)},2600);
+let rdy=0;const t0=performance.now();
+function pg(v){$('#pf').style.width=v*100+'%';if(!rdy)$('#en').textContent='Loading '+Math.round(v*100)+'%'}
+function ok(){if(rdy)return;rdy=1;pg(1);setTimeout(()=>{$('#en').disabled=false;$('#en').textContent='Enter Earth →'},Math.max(0,1800-(performance.now()-t0)))}
+LM.onProgress=(u,i,t)=>pg(i/t);LM.onLoad=ok;LM.onError=()=>{};setTimeout(ok,7000);
+function enter(){if($('#en').disabled)return;$('#wl').classList.add('out');document.body.classList.remove('lock');document.body.classList.add('in');scrollTo(0,0)}
+try{if(sessionStorage.seen){sessionStorage.removeItem('seen');$('#wl').style.display='none';document.body.classList.remove('lock');document.body.classList.add('in')}}catch(e){}
+$('#en').onclick=enter;addEventListener('keydown',e=>{if(e.key=='Enter')enter()});
+// before/after
+$('#rg').oninput=e=>{const v=e.target.value;$('#bf').style.clipPath=`inset(0 ${100-v}% 0 0)`;$('#hd').style.left=v+'%'};
+(function(){const ba=document.querySelector('.ba'),rg=$('#rg');let d=0;const set=x=>{const r=ba.getBoundingClientRect();rg.value=Math.max(0,Math.min(100,(x-r.left)/r.width*100));rg.dispatchEvent(new Event('input'))};
+ba.addEventListener('pointerdown',e=>{d=1;ba.setPointerCapture(e.pointerId);set(e.clientX)});ba.addEventListener('pointermove',e=>{if(d)set(e.clientX)});ba.addEventListener('pointerup',()=>d=0);ba.addEventListener('pointercancel',()=>d=0)})();
+// live data
+const CI=[['Algiers',36.75,3.06],['London',51.5,-0.12],['New York',40.71,-74.0],['Tokyo',35.68,139.69],['Sydney',-33.87,151.21],['Cairo',30.04,31.24],['São Paulo',-23.55,-46.63],['Delhi',28.61,77.2]];
+CI.forEach((c,i)=>$('#city').add(new Option(c[0],i)));
+async function live(i){const [n,la,lo]=CI[i],j=u=>fetch(u).then(r=>r.json()).catch(()=>null);
+ const [w,a,m]=await Promise.all([j(`https://api.open-meteo.com/v1/forecast?latitude=${la}&longitude=${lo}&current=temperature_2m,wind_speed_10m,relative_humidity_2m`),
+ j(`https://air-quality-api.open-meteo.com/v1/air-quality?latitude=${la}&longitude=${lo}&current=us_aqi,pm2_5`),
+ j(`https://marine-api.open-meteo.com/v1/marine?latitude=${la}&longitude=${lo}&current=wave_height,sea_surface_temperature`)]);
+ const t=w&&w.current?w.current.temperature_2m+'°C':'n/a',q=a&&a.current&&a.current.us_aqi!=null?a.current.us_aqi:'n/a',
+ sst=m&&m.current&&m.current.sea_surface_temperature!=null?m.current.sea_surface_temperature+'°C':'n/a',wv=m&&m.current&&m.current.wave_height!=null?m.current.wave_height+' m':'n/a';
+ $('#p1').textContent=$('#l1').textContent=t;$('#p1s').textContent=w&&w.current?`Wind ${w.current.wind_speed_10m} km/h · Humidity ${w.current.relative_humidity_2m}%`:'';
+ $('#p2').textContent=$('#l2').textContent=q;$('#p2s').textContent=typeof q=='number'?(q<=50?'Good':q<=100?'Moderate':q<=150?'Unhealthy for sensitive groups':'Unhealthy'):'';
+ $('#p3').textContent=$('#l3').textContent=sst;$('#p4').textContent=wv}
+$('#city').onchange=e=>live(e.target.value);live(0);
+// take action
+const AC=['Switch to renewable energy or cut home energy use','Eat more plants, waste less food','Walk, cycle or use public transport','Refuse single-use plastic','Plant a tree or protect a green space','Repair, reuse and buy second-hand','Save water, never pour chemicals in drains','Share what you learn with friends and family'];
+let sv=[];try{sv=JSON.parse(localStorage.ac||'[]')}catch(e){}
+function paint(){$('#cnt').textContent=sv.length}
+AC.forEach((t,i)=>{const d=document.createElement('div');d.className='card act rv'+(sv.includes(i)?' done':'');d.innerHTML=`<i>${sv.includes(i)?'✓':''}</i><span>${t}</span>`;
+ d.onclick=()=>{sv=sv.includes(i)?sv.filter(x=>x!=i):[...sv,i];d.classList.toggle('done');d.firstChild.textContent=sv.includes(i)?'✓':'';try{localStorage.ac=JSON.stringify(sv)}catch(e){}paint()};$('#acts').append(d);io.observe(d)});paint();
+</script>
+</body>
+</html>
